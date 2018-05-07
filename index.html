@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Radar Chart</title>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <style>
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row" style="margin-top: 10px">
+
+            <h2>Visual Analysis of the Best Digital Banks and FIs Results</h2>
+
+            <p>   The below visualization was created using the
+                <a href="http://retailfinance.theasianbanker.com/top-digital-financial-institution#.WuavzyBm82M.linkedin">Best Digital Banks and FIs ranking table.</a>
+                By visually representing the numbers we are able to clearly understand where we stand against the rest of the group on each of the different areas. 
+            </p>
+        
+            <p>
+            For instance, there are only a couple of players in the Big Data space that had scored high: JD Finance china, ANT Financial services china, Tencent Financial Technologies China.
+            The next step is to learn what they have done to get those scores.
+            </p>
+
+            <p>
+                <h5>Other insights</h5>
+
+                <ul>
+                    <li>FriMi is a noticable player in the Operations area</li>
+                    <li>Lowest in Transactions </li>
+                    <li>Low in BigData, Impact, and Innovation - In the BigData area, only a small number of players had scored well </li>
+                </ul>
+
+
+            </p>
+
+        </div>
+
+        <div class="row">
+
+
+            <div class="col-md-6">
+                <h1>Organization</h1>
+                <div id="orgChart">
+                    <!-- Plotly chart will be drawn inside this DIV -->
+                </div>
+                <script src="app2.js"></script>
+            </div>
+
+            <div class="col-md-6">
+                <h1>Technology</h1>
+                <div id="techChart">
+                    <!-- Plotly chart will be drawn inside this DIV -->
+                </div>
+                <script src="app3.js"></script>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Operations</h1>
+                <div id="opsChart">
+                    <!-- Plotly chart will be drawn inside this DIV -->
+                </div>
+                <script src="app4.js"></script>
+            </div>
+
+            <div class="col-md-6">
+                <h1>BigData</h1>
+                <div id="bdChart">
+                    <!-- Plotly chart will be drawn inside this DIV -->
+                </div>
+                <script src="app1.js"></script>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Innovation</h1>
+                <div id="innoChart">
+                    <!-- Plotly chart will be drawn inside this DIV -->
+                </div>
+                <script src="app5.js"></script>
+            </div>
+
+            <div class="col-md-6">
+                <h1>Transactions</h1>
+                <div id="trnxChart">
+                    <!-- Plotly chart will be drawn inside this DIV -->
+                </div>
+                <script src="app6.js"></script>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Impact</h1>
+                <div id="impChart">
+                    <!-- Plotly chart will be drawn inside this DIV -->
+                </div>
+                <script src="app7.js"></script>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
